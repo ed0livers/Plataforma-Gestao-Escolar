@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Aluno</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo" onclick="window.location.href='index.html'">
+            <img src="images/logo.png" alt="Logo">
+        </div>
+        <div class="login-container">
+            <h2>Login Aluno</h2>
+            <form id="loginForm" onsubmit="return validateStudentForm()">
+                <div class="input-field">
+                    <input type="text" id="matricula" placeholder="Matrícula" required>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="senha" placeholder="Senha" required>
+                </div>
+                <button type="submit" class="button">Login</button>
+                <p class="recover-password"><a href="recovery.html">Recuperar Senha</a></p>
+                <p id="feedback" style="color: red;"></p>
+            </form>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
